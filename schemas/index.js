@@ -14,7 +14,7 @@ const connect = () => {
     mongoose.connect('mongodb://root:root@localhost:27017/admin', {
         dbName: 'nodejs',
         useNewUrlParser: true,
-        useCreateIndex: true,
+        // useCreateIndex: true,
     }, (error) => {
         if (error) {
             console.log('MongoDB Connection Error', error);
@@ -31,4 +31,4 @@ mongoose.connection.on('disconnected', () => {
     console.error('MongoDB connection disconnected. Try connect.');
 })
 
-module.exports = connect();
+module.exports = connect;
