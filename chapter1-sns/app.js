@@ -6,6 +6,7 @@ const session = require('express-session');
 const nunjucks = require('nunjucks');
 const dotenv = require('dotenv');
 
+// dotenv 파일 위치
 dotenv.config();
 const pageRouter = require('./routes/page');
 

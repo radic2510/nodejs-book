@@ -2,6 +2,9 @@ const express = require('express');
 
 const router = express.Router();
 
+/**
+ * follower 기능
+ */
 router.use((req, res, next) => {
     res.locals.user = null;
     res.locals.followerCount = 0;
@@ -10,14 +13,25 @@ router.use((req, res, next) => {
     next();
 });
 
+/**
+ * 프로필
+ */
 router.get('/profile', (req, res) => {
     res.render('profile', { title: '내 정보 - NodeBird' });
 });
 
+
+/**
+ * 회원가입
+ */
 router.get('/join', (req, res) => {
     res.render('join', { title: '회원가입 - NodeBird' });
 });
 
+
+/**
+ * root path
+ */
 router.get('/', (req, res, next) => {
     const twits = [];
     res.render('main', {
