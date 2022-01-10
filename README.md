@@ -14,11 +14,18 @@
 
 ---
 
-### Mongoose Schema
+### MongoDB Schema (Mongoose)
 
-    > 2021.12.28~ 22.01.05
+    > 2021.12.28 ~ 22.01.05
 
     --> 'Real MongoDB' 스터디로 확장
+    --> 후순위로 변경
+
+### MySQL sequelize
+
+    > 2022.01.10 ~
+
+    --> 이후 typeORM or prisma2 선택
 
 ---
 
