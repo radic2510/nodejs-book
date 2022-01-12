@@ -27,11 +27,11 @@ module.exports = class User extends Sequelize.Model {
             },
         }, {
             sequelize,
-            timestamps: false,
+            timestamps: false,  //createdAt, updatedAt
             underscored: false,
-            modelName: 'User',
-            tableName: 'users',
-            paranoid: false,
+            modelName: 'User',  // Post
+            tableName: 'users', // posts
+            paranoid: false,    //deletedAt : soft delete
             charset: 'utf8',
             collate: 'utf8_general_ci',
         });
