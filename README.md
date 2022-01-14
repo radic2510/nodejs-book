@@ -21,11 +21,16 @@
     --> 'Real MongoDB' 스터디로 확장
     --> 후순위로 변경
 
-### MySQL sequelize
+### MySQL with Sequelize
 
-    > 2022.01.10 ~
+    > 2022.01.10 ~ 2022.01.14
+    --> 겉핥기 정도로만 익힘
+    --> 빠르게 typeORM으로 전환하자
+    --> 추후 prisma...?
 
-    --> 이후 typeORM or prisma2 선택
+### MySQL with TypeORM
+
+    > 2022.01.14 ~
 
 ---
 
