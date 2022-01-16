@@ -1,6 +1,6 @@
 const typeorm = require("typeorm"); // import * as typeorm from "typeorm";
-const Post = require("./model/Post").Post; // import {Post} from "./model/Post";
-const Category = require("./model/Category").Category; // import {Category} from "./model/Category";
+const Post = require("./model/User").Post; // import {Post} from "./model/Post";
+const Category = require("./model/Comment").Category; // import {Category} from "./model/Category";
 
 typeorm.createConnection({
     type: "mysql",
@@ -12,8 +12,8 @@ typeorm.createConnection({
     synchronize: true,
     logging: false,
     entities: [
-        require("./entity/PostSchema"),
-        require("./entity/CategorySchema")
+        require("./entity/UserSchema"),
+        require("./entity/CommentSchema")
     ]
 }).then(function (connection) {
 
