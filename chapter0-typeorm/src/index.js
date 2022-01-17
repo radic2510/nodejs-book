@@ -1,6 +1,6 @@
 const typeorm = require("typeorm"); // import * as typeorm from "typeorm";
-const Post = require("./model/User").Post; // import {Post} from "./model/Post";
-const Category = require("./model/Comment").Category; // import {Category} from "./model/Category";
+const User = require("./model/User").User; // import {Post} from "./model/Post";
+const Comment = require("./model/Comment").Comment; // import {Category} from "./model/Category";
 
 typeorm.createConnection({
     type: "mysql",
@@ -8,7 +8,7 @@ typeorm.createConnection({
     port: 3306,
     username: "root",
     password: "password",
-    database: "nodejs",
+    database: "nodeto",
     synchronize: true,
     logging: false,
     entities: [
@@ -17,8 +17,8 @@ typeorm.createConnection({
     ]
 }).then(function (connection) {
 
-    const category1 = new Category(0, "TypeScript");
-    const category2 = new Category(0, "Programming");
+    // const category1 = new Category(0, "TypeScript");
+    // const category2 = new Category(0, "Programming");
 
     return connection
         .manager
