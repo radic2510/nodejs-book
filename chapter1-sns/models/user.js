@@ -1,7 +1,7 @@
 const {DataTypes, Model} = require('sequelize');
 
 module.exports = class User extends Model {
-    static init(sequlize) {
+    static init(sequelize) {
         return super.init({
             email: {
                 type: DataTypes.STRING(40),
@@ -46,14 +46,14 @@ module.exports = class User extends Model {
         db.User.belongsToMany(db.User, {
             foreignKey: 'followingId',
             as: 'Followers',
-            through: 'Follow',
+            through: 'follow',
         });
 
         // Following
         db.User.belongsToMany(db.User, {
             foreignKey: 'followerId',
             as: 'Following',
-            through: 'Follow',
+            through: 'follow',
         });
     }
 }

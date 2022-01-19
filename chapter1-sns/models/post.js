@@ -28,6 +28,6 @@ module.exports = class Post extends Model {
         db.Post.belongsTo(db.User);
 
         // Post - PostHashTag - HashTag
-        db.Post.belongsToMany(db.Hashtag, { through: 'PostHashTag' });
+        db.Post.belongsToMany(db.Hashtag, { through: 'postHashtag' });
     }
 }
