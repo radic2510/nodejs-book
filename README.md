@@ -36,7 +36,7 @@
 
 ### 1. [Practice] SNS service using Express
     
-    >
+    > 2022.01.18 ~
 
 ### 2. Web API Server
 
