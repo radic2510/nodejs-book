@@ -49,10 +49,11 @@ module.exports = class User extends Model {
             through: 'follow',
         });
 
+        // User-Follow-User
         // Following
         db.User.belongsToMany(db.User, {
             foreignKey: 'followerId',
-            as: 'Following',
+            as: 'Followings',
             through: 'follow',
         });
     }
